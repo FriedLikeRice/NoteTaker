@@ -16,11 +16,11 @@ app.use(express.json());
 
 
 // routes to route files
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require('./Develop/routes/apiRoutes.js')(app);
+require('./Develop/routes/htmlRoutes.js')(app);
 
 
 // app listener - starts the server
 app.listen(PORT, () => {
-  console.log(`Server available at localhost${PORT}`);
+  console.log(`Server available at localhost:${PORT}`);
 });
